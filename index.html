@@ -15,15 +15,15 @@
 
       <form class="form-group">
 
-        <h4>Size:<h4>
+        <h4>Size:</h4>
         <div class-"radio">
-          <label><input type="radio" name="sizes">Small</label>
+          <label><input type="radio" name="size" value="12">  Small</label>
         </div>
         <div class-"radio">
-          <label><input type="radio" name="sizes">Medium</label>
+          <label><input type="radio" name="size" value="14">  Medium</label>
         </div>
         <div class-"radio">
-          <label><input type="radio" name="sizes">Large</label>
+          <label><input type="radio" name="size" value="16" checked>  Large</label>
         </div>
 
         <h4>Toppings</h4>
@@ -46,12 +46,12 @@
           </div>
         </div>
 
-        <button type="submit" class="btn-lg btn-success">View order</button>
+        <button id="calculate" type="submit" class="btn-lg btn-success">View order</button>
 
       </form>
 
-      <div id="order">
-      </div>
+      <h5 id="order">
+      </h5>
 
     </div>
   </body>
