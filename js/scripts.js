@@ -1,7 +1,7 @@
 //business logic
-function Pizza (size, toppingsNumber, toppingNames) {
+function Pizza (size, toppingNumber, toppingNames) {
   this.size = size;
-  this.toppingsNumber = toppingsNumber;
+  this.toppingNumber = toppingNumber;
   this.toppingNames = toppingNames;
   this.price = 0;
 }
@@ -10,7 +10,18 @@ Pizza.prototype.priceCalculator = function(size, toppings) {
   this.price += (size + (toppings *2));
 }
 
+Pizza.prototype.toppingFormatter = function(array) {
+  for (i = 0; i < array.length; i++) {
+    if (i < (array.length - 1)) {
+      toppingString.push(array[i] + ", ");
+    } else {
+      toppingString.push("and " + array[i] + " ");
+    }
+  }
+}
+
 var newPizza;
+var toppingString;
 
 //user interface logic
 $(document).ready(function(){
@@ -25,8 +36,8 @@ $(document).ready(function(){
     });
     newPizza = new Pizza(pizzaSize, numberOfToppings, toppingsArray);
     newPizza.priceCalculator(pizzaSize, numberOfToppings);
-    console.log(newPizza.price);
-    $("#order").text("Your " + newPizza.size +" inch pizza with " + newPizza.toppingNames + " will be $" + newPizza.price);
+    newPizza.toppingFormatter(newPizza.toppingNames);
+    $("#order").text("Your " + newPizza.size +"\" pizza with " + toppingString + " will be $" + newPizza.price);
   });
 
 });

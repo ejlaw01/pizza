@@ -5,6 +5,8 @@
     <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Open+Sans+Condensed:300|Poiret+One" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <title>Pizza forever</title>
   </head>
@@ -12,41 +14,75 @@
     <div class="container">
       <h1>Pizza Sunrise</h1>
       <h3>as dependable as the rising sun</h3>
+      <hr>
 
       <form class="form-group">
 
-        <h4>Size:</h4>
-        <div class-"radio">
-          <label><input type="radio" name="size" value="12">  Small</label>
-        </div>
-        <div class-"radio">
-          <label><input type="radio" name="size" value="14">  Medium</label>
-        </div>
-        <div class-"radio">
-          <label><input type="radio" name="size" value="16" checked>  Large</label>
-        </div>
-
-        <h4>Toppings</h4>
         <div class="row">
-          <div class="col-sm-4 col-sm-offset-1">
-            <div class="checkbox">
-              <label><input type="checkbox" name="topping" value="pepperoni" id="check1">Pepperoni</label>
+          <div class="col-sm-3">
+            <h4>Size:</h4>
+            <div class-"radio">
+              <label><input type="radio" name="size" value="12">  Small</label>
             </div>
-            <div class="checkbox">
-              <label><input type="checkbox" name="topping" value="anchovies" id="check2">Anchovies</label>
+            <div class-"radio">
+              <label><input type="radio" name="size" value="14" checked>  Medium</label>
+            </div>
+            <div class-"radio">
+              <label><input type="radio" name="size" value="16">  Large</label>
+            </div>
+            <div class-"radio">
+              <label><input type="radio" name="size" value="16">  Spectacular</label>
             </div>
           </div>
-          <div class="col-sm-4 col-sm-offset-1">
+          <div class="col-sm-3">
+            <h4>Toppings:</h4>
             <div class="checkbox">
-              <label><input type="checkbox" name="topping" value="basil" id="check3">Basil</label>
+              <label><input type="checkbox" name="topping" value="salami">Salami</label>
             </div>
             <div class="checkbox">
-              <label><input type="checkbox" name="topping" value="garlic" id="check4">Garlic</label>
+              <label><input type="checkbox" name="topping" value="lamb sausage">Lamb sausage</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="topping" value="canadian bacon">Canadian bacon</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="topping" value="anchovies">Anchovies</label>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <br><br>
+            <div class="checkbox">
+              <label><input type="checkbox" name="topping" value="basil">Fresh basil</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="topping" value="capers">Capers</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="topping" value="artichoke">Artichoke hearts</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="topping" value="mushroom">Porcini mushroom</label>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <br><br>
+            <div class="checkbox">
+              <label><input type="checkbox" name="topping" value="olive">Spanish olives</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="topping" value="garlic">Roasted garlic</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="topping" value="onion">Carmelized onion</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="topping" value="pepperoncinis">Pepperoncini</label>
             </div>
           </div>
         </div>
+        <hr>
 
-        <button id="calculate" type="submit" class="btn-lg btn-success">View order</button>
+        <button id="calculate" type="submit" class="btn btn-secondary btn-md black-background">View order</button>
 
       </form>
 
