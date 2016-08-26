@@ -5,7 +5,7 @@ html {
 
 body {
   background-color: inherit;
-  /*color: white;*/
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -28,10 +28,18 @@ h5 {
   text-align: center;
   font-size: 18px;
 }
+label {
+  font-weight: normal;
+}
 
 .btn-secondary {
   display: block;
   margin: auto;
+}
+
+.btn-secondary:focus {
+  outline: none;
+  color: white;
 }
 
 .btn:hover{
@@ -41,4 +49,13 @@ h5 {
 .black-background {
   background-color:#333333;
     color:#ffffff;
+}
+
+.col-sm-15 {
+    width: 20%;
+    float: left;
+}
+
+#toppings {
+  margin-left: 30px;
 }

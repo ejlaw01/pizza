@@ -33,5 +33,8 @@ _MIT, Copyright 2016, Ethan Law_
   * Input: Medium
   * Output: 12
 * Program will use a prototype to add to the base price per topping selected
-  * Input: pepperoni, onion
+  * Input: medium, pepperoni, onion
   * Output: 16
+* Program will format topping array to help it display properly
+  * Input: ["pepperoni","onion"]
+  * Output: ["pepperoni "," and onion"]
